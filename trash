@@ -1,0 +1,20 @@
+du -Hhsc /home/*/mail/*/*/.Trash
+To find the disk space consumed by all user's File Manager trash directories on the server:
+
+du -Hhsc /home/*/.trash
+To clear all user's email trash directories:
+
+rm -rf /home/*/mail/*/*/.Trash/*
+To clear all user's File Manager trash directories:
+
+rm -rf /home/*/.trash/*
+To see the disk space consumption for a single user's email trash, where user's username is USER:
+
+du -Hhsc /home/USER/mail/*/*/.Trash/
+To see the disk space consumption for a single email account's trash, where the email account is info@domain.com:
+
+du -Hhsc /home/USER/mail/domain.com/info/.Trash/
+To see the disk space consumption for a single user's File Manager trash, where user's username is USER:
+
+du -Hhsc /home/USER/.trash
+If you have any trouble, please open a support ticket and we'll be glad to help! :)
